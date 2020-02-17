@@ -1,2 +1,2 @@
 # vishaalpal.github.io
- My first GitHub Project
+This project is a landing page linking all of my socials. 
