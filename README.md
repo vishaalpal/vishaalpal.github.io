@@ -1,2 +1,3 @@
 # vishaalpal.github.io
-This project is a landing page linking all of my socials. 
+My very first GitHub project.
+The purpose of this project is to create a website to link all of my socials for my CV. 
