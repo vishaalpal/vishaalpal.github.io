@@ -1,61 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-33999782-3"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
 
-            gtag('config', 'UA-33999782-3');
-        </script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishaal Pal Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/2f9c6a016f.js" crossorigin="anonymous"></script>
+</head>
 
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-        <!-- Stylesheets -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link rel="stylesheet" type="text/css" href="css/cover.css">
-
-        <title>Vishaal Pal</title>
-    </head>
-    <body class="text-center">
-        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-            <header class="masthead mb-auto">
-                <!-- <div class="inner">
-                    <h3 class="masthead-brand">About Me</h3>
-                    <nav class="nav nav-masthead justify-content-center">
-                        <a class="nav-link active" href="#">Home</a>
-                        <a class="nav-link" href="#">Coming Soon</a>
-                    </nav>
-                </div> -->
-                
-            </header>
-            <main role="main" class="inner cover">
-                <img class="cover-profile img-thumbnail m-4" src="images/avatar.png" alt="Profile Picture">
-                <h1 class="cover-heading">Vishaal Pal</h1>
-                <p class="lead">Cloud Engineer</p>
-                <p class="lead">
-                    <!-- <a href="#" class="btn btn-lg btn-secondary">Coming Soon</a> -->
-                    <a class="social-link" href="mailto:vishaalvpal@gmail.com" target="_blank"><i class="fas fa-2x fa-envelope-square"></i></a>
-                    <a class="social-link" href="https://github.com/vishaalpal" target="_blank"><i class="fab fa-2x fa-github-square"></i></a>
-                    <a class="social-link" href="https://linkedin.com/in/vishaal-pal-247655100/" target="_blank"><i class="fab fa-2x fa-linkedin"></i></a>
-                    <a class="social-link" href="https://facebook.com/vishaal.pal" target="_blank"><i class="fab fa-2x fa-facebook-square"></i></a>
-                </p>
-            </main>
-            <footer class="mastfoot mt-auto">
-                <div class="inner">
-                    <p>This webpage is hosted on my <a href="https://github.com/vishaalpal/vishaalpal.github.io">GitHub</a></p>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Bula,</p>
+                <h1>I'm <span>Vishaal Pal</span><br>Cloud DevOps Engineer</h1>
+            </div>
+        </div>
+    </div>
+    <!------------------------------------about------------------------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
                 </div>
-            </footer>
-        </div>      
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hey there, I'm Vishaal Pal, a Cloud DevOps Engineer with a strong grip on Infrastructure as Code,
+                        Containerization, automation, and AWS and GCP cloud services. I get excited about optimizing
+                        cloud infrastructures and deploying scalable applications using technologies like Docker and
+                        Kubernetes. Automation is my jam, as it boosts efficiency and keeps things running smoothly. I
+                        try my best to stay updated with the latest DevOps trends and to keep learning. Beyond work, you
+                        can find me tinkering with my homelab to learn new technologies and lurking on /rselfhosted!
+                    </p>
 
-        <script src="https://kit.fontawesome.com/59e57467fa.js" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    </body>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <uL>
+                            <li><span>Infrastructure as Code</span><br>Designing cloud infrastructures using code for
+                                reproducibility and scalability.</li>
+                            <li><span>Containerization</span><br>Expertise in Docker and Kubernetes for efficient
+                                application deployments.</li>
+                            <li><span>Cloud Services</span><br>Proficient in managing cloud resources and
+                                deploying solutions on AWS and GCP.</li>
+                        </uL>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <uL>
+                            <li><span>Cognizant - Cloud DevOps Engineer/Consultant</span><br>As a Cloud DevOps
+                                Engineer, I focus on Infrastructure as Code, CI/CD, automation, and DevOps practices
+                                at Cognizant. My role involves designing cloud infrastructures, establishing efficient
+                                CI/CD pipelines, and automating tasks to optimize team productivity and deliver advanced
+                                cloud solutions.</li>
+                            <li><span>Amazon Web Services - Cloud Infrastructure Engineer</span><br>As an AWS Cloud
+                                Infrastructure Engineer, I specialized in assisting our Business and Enterprise
+                                customers for various AWS services part of the Windows profile such as: <br>
+                                - AppStream 2.0<br>
+                                - Application Discovery<br>
+                                - Application Migration Service<br>
+                                - Application Wizard<br>
+                                - Chime<br>
+                                - Chime SDK<br>
+                                - CloudEndure Disaster Recovery<br>
+                                - CloudEndure Migration<br>
+                                - Compute Optimizer<br>
+                                - Directory Service<br>
+                                - EBS (Elastic Block Store)<br>
+                                - EC2 Image Builder<br>
+                                - EC2 (Windows)<br>
+                                - Launch Wizard<br>
+                                - LightSail<br>
+                                - Server Migration Service<br>
+                                - Systems Manager (Windows)<br>
+                                - VM Import/Export<br>
+                                - WorkDocs<br>
+                                - WorkLink<br>
+                                - WorkMail<br>
+                                - WorkSpaces (Windows)<br>
+                                <br>
+                                In addition to the above services, all AWS services depend on core services such as
+                                CloudTrail, CloudWatch, IAM and VPC which I am well versed with.
+                            </li>
+                            <li><span>Communications Design and Management - </span><br>My day to day tasks at CDM
+                                involved:<br>
+                                - Administration of Active Directory for various clients<br>
+                                - Administration of Exchange / Office365 for various clients<br>
+                                - Administration of Citrix XenApp services<br>
+                                - Monitoring & remote support of various clients through technologies such as
+                                SolarWinds, Nable and Teamviewer<br>
+                                - Level 1/2 Administration of network devices for various clients - Cisco and
+                                Juniper<br>
+                                - Asset management, process improvement and documentation for various clients and
+                                internal<br>
+                                - Liaising and cooperating with various venders for various clients<br>
+                                - Meeting SLA requirements and resolving tickets in an efficient manner<br>
+                                - Serving as a point of escalation for various clients<br>
+                                - Process improvement, documentation and learning<br>
+                            </li>
+                        </uL>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <uL>
+                            <li><span>Bachelor of Information Technology Major in Networking</span><br>Graduated with a
+                                focus on networking from Western Sydney University.</li>
+                            <li><span>Certifications</span><br>
+                                Amazon Web Services Cloud Practitioner <i class="fa-solid fa-check"></i><br>
+                                AWS Certified Solutions Architect Associate <i class="fa-solid fa-check"></i><br>
+                                Google Cloud Associate Cloud Engineer <i class="fa-solid fa-check"></i><br>
+                                Hashicorp Certified Terraform Associate <i class="fa-solid fa-check"></i><br>
+                                Linux Academy Linux Operating System Fundamentals <i class="fa-solid fa-check"></i><br>
+                                Redhat Certified Systems Administrator - In the works <i
+                                    class="fa-solid fa-spinner"></i><br>
+                                Certified Kubernetes Administrator - In the works <i
+                                    class="fa-solid fa-spinner"></i><br>
+                            </li>
+                        </uL>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------------------services------------------------------------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-cloud"></i>
+                    <h2>Cloud Services</h2>
+                    <p>As a Cloud DevOps Engineer, I specialize in designing, implementing, and managing cloud-based
+                        solutions tailored to meet your business needs. Whether it's AWS, GCP, or Azure, I can assist
+                        with cloud architecture, migration, and optimization for seamless scalability and performance.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-docker"></i>
+                    <h2>Containerisation</h2>
+                    <p>I excel in leveraging containerization technologies like Docker and Kubernetes to streamline
+                        application deployment and management. With my expertise, I ensure container orchestration,
+                        scalability, and portability, enabling efficient development and operations for your projects.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code-branch"></i>
+                    <h2>Automation and CI/CD</h2>
+                    <p>Automating your development workflows and implementing continuous integration and delivery
+                        pipelines is my forte. As a Cloud DevOps Engineer, I can optimize your processes, accelerate
+                        software delivery, and improve overall efficiency, enabling rapid and reliable deployments.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------------------portfolio------------------------------------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>AWS Infrastructure Automation with Terraform</h3>
+                        <p>In this personal Terraform project, I automated infrastructure on AWS with a modular
+                            approach. It sets up a VPC, public subnet, and launches an Ubuntu EC2 webserver displaying
+                            text. The project's code and detailed documentation can be found in the README.md,
+                            showcasing my hands-on experience and understanding of Terraform's basics. Explore the full
+                            project and its capabilities by following the link provided.</p>
+                        <a href="https://github.com/vishaalpal/aws_terraform_modular_infra" target="_blank"><i
+                                class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Observability as Code with Datadog: A Team-Driven 3 Musketeers Approach</h3>
+                        <p>In this transformative project led by Kia Vosoughian, our team developed an innovative
+                            solution for rapid and secure deployment of Datadog's monitoring infrastructure via code.
+                            Leveraging Observability as Code and the 3 Musketeers approach, we empowered businesses to
+                            effortlessly configure and manage their monitoring settings. Our comprehensive solution
+                            ensured consistency, version control, and strong security measures, enabling companies to
+                            make data-driven decisions and gain real-time insights into their cloud resources with ease.
+                            This game-changing approach accelerated companies' observability journey, optimizing
+                            application performance and proactive issue identification. Explore the impact of our
+                            project, including the user-friendly UI, through the provided link.</p>
+                        <a href="#" target="_blank"><i
+                                class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Building a DIY NAS: Exploring Self-Hosting and Automation with Proxmox VE and TrueNAS Scale
+                        </h3>
+                        <p>In this upcoming project, I'll be building a DIY NAS with Proxmox VE as the Base OS and
+                            TrueNAS Scale on a VM. I'll also host various services using containers, including traefik,
+                            teleport, portainer, home assistant, plex, jellyfin, and vaultwarden and more. This exciting
+                            endeavor
+                            will focus on learning more about self-hosting, automation, networking, and exploring
+                            different
+                            technologies. Stay tuned for updates as I embark on this dynamic learning journey.</p>
+                        <a href="#" target="_blank"><i
+                                class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/vishaalpal?tab=repositories" target="_blank" class="btn">See more</a>
+        </div>
+    </div>
+    <!------------------------------------contact------------------------------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> vishaalvpal@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 0431 317 117</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/vishaalpal" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/vishaal-pal-247655100/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-resume-2021.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>This website was created thanks to the tutorial on GreatStack
+                <a href="https://www.youtube.com/watch?v=0YFrGy_mzjY&ab_channel=GreatStack" target="_blank">YouTube</a>
+                <i class="fa-brands fa-youtube"></i>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby3AakBHTDaoyqYvll0divG7AR--sApAt1wLSwLmOXjBMHR4Sia9tKUCYYw-z-hXCDL/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
 </html>
